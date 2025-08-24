@@ -1,0 +1,43 @@
+# 🧪 Application Testing Guide
+
+Panduan ini menjelaskan langkah-langkah pengujian aplikasi secara sistematis untuk memastikan kualitas dan kestabilan sebelum rilis.
+
+---
+
+## 🔍 Tujuan
+- Memastikan aplikasi berjalan sesuai kebutuhan (*requirement*).
+- Mengidentifikasi bug atau error sejak dini.
+- Memberikan laporan hasil pengujian yang terstruktur.
+
+---
+
+## 🛠️ Lingkungan Pengujian
+| Komponen             | Spesifikasi                           |
+|----------------------|--------------------------------------|
+| OS                   | Windows 11 / Ubuntu 22.04            |
+| Browser              | Chrome 125+, Firefox 120+            |
+| Database             | MySQL 8.0                            |
+| Server               | Node.js 20, Nginx                    |
+| Tools                | Postman, JMeter, Selenium, GitHub    |
+
+---
+
+## 📝 Rencana Pengujian
+1. **Perencanaan**: Tentukan cakupan uji, tujuan, dan alat uji.
+2. **Analisis Kebutuhan**: Tinjau requirement & desain sistem.
+3. **Desain Test Case**: Buat langkah uji & data uji.
+4. **Eksekusi Uji**: Jalankan aplikasi dan catat hasil.
+5. **Pelaporan Bug**: Laporkan bug dengan deskripsi lengkap.
+6. **Regression Test**: Pastikan bug yang sudah diperbaiki tidak merusak fitur lain.
+7. **Laporan Akhir**: Rangkuman hasil pengujian.
+
+---
+
+## 📂 Struktur Folder
+```plaintext
+tests/
+ ├─ functional/       # Test fungsionalitas
+ ├─ integration/      # Test integrasi antar modul
+ ├─ performance/      # Test performa aplikasi
+ ├─ security/         # Test keamanan
+ └─ reports/          # Laporan hasil pengujian
